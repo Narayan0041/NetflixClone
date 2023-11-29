@@ -48,12 +48,8 @@ body {
 }
 
 .header {
-    /* display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 15rem; */
     font-size: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg");
-    /* position: relative; */
     height: 101vh;
     width: 100%;
     border-bottom: .7rem solid var(--border-color);
@@ -92,6 +88,7 @@ body {
 
 .language select option {
     font-size: 1.5rem;
+    color: black;
     /* background-color: aqua; */
 }
 
@@ -100,6 +97,9 @@ body {
     color: white;
 }
 
+.container1 {
+    height: 5rem;
+}
 
 .container1 img {
     opacity: 0.2;
@@ -112,31 +112,34 @@ body {
 .text-container {
     position: relative;
     bottom: 48rem;
-    left: 42rem;
+    left: 40rem;
+}
+
+.container1 .text-container h1 {
+    position: relative;
+    right: 37rem;
+    font-size: 5rem;
+    text-align: center;
+    color: var(--font-color);
 }
 
 .text-container input {
     height: 4.7rem;
     width: 30%;
     border-radius: .5rem;
-    margin: 3rem .5rem;
+    margin: 3rem .5rem 3rem 5rem;
     border: 1px solid var(--border-color);
     background: transparent;
     padding: .5rem 1rem;
     font-size: 2rem;
     color: var(--font-color);
-}
 
-.text-container h1 {
-    font-size: 3.5rem;
-
-    color: var(--font-color);
 }
 
 .text-container h4 {
     margin-top: 2.2rem;
     font-size: 2rem;
-    margin-left: 17rem;
+    margin-left: 27rem;
     color: var(--font-color);
 
 }
@@ -149,8 +152,8 @@ body {
 }
 
 .btn1 {
-    padding: .8rem 2.5rem;
-    padding-left: 2rem;
+    padding: 1rem 2.5rem;
+    padding-left: 4rem;
     font-size: 2.5rem;
     color: var(--font-color);
     border-radius: .5rem;
@@ -165,14 +168,15 @@ body {
 
 .container2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 75vh;
     border-bottom: .7rem solid var(--border-color);
 }
 
 .text-container2 {
-    position: relative;
-    bottom: 18rem;
+    margin-bottom: 13rem;
+    color: white;
 }
 
 .text-container2 h1 {
@@ -188,12 +192,18 @@ body {
     color: var(--font-color);
 }
 
+.img-container2 video {
+    height: 217px;
+    position: relative;
+    top: 9rem;
+    left: 22rem;
+}
+
 .img-container2 img {
     position: relative;
-    bottom: 15rem;
+    bottom: 21rem;
     height: 40rem;
-    right: 15rem;
-    /* margin-bottom: 10rem; */
+    left: 15rem;
 }
 
 .container3 {
@@ -263,11 +273,26 @@ body {
     margin-top: 12rem;
     padding: 5rem;
     margin-bottom: 10rem;
+    height: 70vh;
     border-bottom: .7rem solid var(--border-color);
 }
 
+.img-container4 {
+    display: flex;
+    flex-direction: column;
+}
+
 .img-container4 img {
+    position: relative;
+    bottom: 10rem;
     height: 40rem;
+}
+
+.img-container4 video {
+    width: 307px;
+    position: relative;
+    top: 11rem;
+    left: 11rem;
 }
 
 .text-container4 h1 {
@@ -512,9 +537,8 @@ input[type="radio"] {
 /* ------------------sign-in page--------------- */
 .header1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg");
-    height: 135vh;
+    height: 140vh;
     width: 100%;
-    /* border-bottom: .7rem solid var(--border-color); */
 }
 
 .header img {
@@ -531,14 +555,12 @@ input[type="radio"] {
 }
 
 .sign-in-container {
-    /* position: relative; */
-    /* height: 60vh; */
     margin-left: 35%;
     padding: 3rem 0;
     width: 30vw;
     left: 45%;
     z-index: 1000;
-   background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
 }
 
 .input-section input {
@@ -564,6 +586,7 @@ input[type="radio"] {
     border-radius: .5rem;
     background-color: #303030;
 }
+
 .input2 input {
     margin-top: 2rem;
     height: 5rem;
@@ -575,7 +598,8 @@ input[type="radio"] {
     color: white;
     background-color: #303030;
 }
-.input-container .button{
+
+.input-container .button {
     font-size: 1.8rem;
     margin-top: 5rem;
     margin-left: 7rem;
@@ -584,92 +608,113 @@ input[type="radio"] {
     padding: 1.5rem 4rem;
     border-radius: .5rem;
     background-color: var(--red-color);
-cursor: pointer;
+    cursor: pointer;
 }
-.bottom{
+
+.bottom {
     display: flex;
-    /* justify-content: space-around; */
     margin-left: 17%;
     margin-top: 2rem;
-
-    
 }
-.left input{
+
+.LearnMore {
+    font-size: .5rem;
+}
+
+.left input {
     font-size: 2rem;
     background-color: var(--border-color);
 }
-.left label{
+
+.left label {
     font-size: 2rem;
-    color:rgb(130, 125, 125);
+    color: rgb(130, 125, 125);
     margin-right: 13rem;
 }
-.right a{
+
+.right a {
     text-decoration: underline;
     font-size: 1.5rem;
-    color:rgb(130, 125, 125);
+    color: rgb(130, 125, 125);
 }
-.last-bottom{
+
+.last-bottom {
     margin-top: 5rem;
 }
-.last-bottom h2{
+
+.last-bottom h2 {
     margin-left: 7rem;
     font-size: 2rem;
-    color:rgb(130, 125, 125) ;
+    color: rgb(130, 125, 125);
 }
-.last-bottom h2 span a{
-    /* position: relative;
-    right: 15rem; */
+
+.last-bottom h2 span a {
     display: inline;
     position: relative;
     right: 50rem;
-    color:var(--font-color);
+    color: var(--font-color);
 }
-.last-bottom p{
+
+.SignUpLink {
+    position: relative;
+    left: 50rem;
+    font-size: 1.7rem;
+}
+
+.last-bottom p {
     margin-left: 7rem;
     font-size: 1.5rem;
     margin-top: 1rem;
     color: rgb(130, 125, 125);
 }
-.last-bottom a{
+
+.last-bottom .LearnMore {
     position: relative;
     bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     left: 22rem;
     color: blue;
 }
 
 
-.footer-sign{
+.footer-sign {
     margin-top: 7rem;
+    height: 25.2%;
     padding: 5rem 7rem;
-    background:linear-gradient(rgba(19, 19, 19, 0.6),rgba(21, 20, 20, 0.6));
+    background: linear-gradient(rgba(16, 16, 16, 0.6), rgba(13, 13, 13, 0.6));
 }
-.footer-sign a{
+
+.footer-sign a {
     margin-left: 10rem;
     font-size: 1.8rem;
-    color:  rgb(130, 125, 125);
+    color: rgb(130, 125, 125);
 }
-.footer-page{
+
+.footer-page {
     display: flex;
     justify-content: space-around;
 
 
 }
-.footer-page .box{
+
+.footer-page .box {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     font-size: 1.5rem;
-    color:  rgb(130, 125, 125);
+    color: rgb(130, 125, 125);
 }
-.footer-page .box a{
-font-size: 1.5rem;
+
+.footer-page .box a {
+    font-size: 1.5rem;
     margin: .7rem;
 }
-.footer-page .box a:hover{
+
+.footer-page .box a:hover {
     text-decoration: underline;
 }
-.box .language{
-   position: relative;
-   right: 4rem;
+
+.box .language {
+    position: relative;
+    right: 4rem;
 }
